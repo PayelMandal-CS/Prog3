@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reverse A String</title>
+</head>
+<body>
+	<h2>Enter a string</h2>
+	<input type="text" id="r"/><br><br>
+	<input type = "button" onclick = "revString()" value = "reverse"/><br><br>
+	<div id="res"></div>
+	<script>
+	function revString()
+	{
+		let S=document.getElementById("r").value;
+		let str="";
+		for(let i=S.length-1;i>=0;i--)
+		{
+			str+=S[i];
+		}
+		document.getElementById("res").innerHTML=str;
+	}
+	</script>
+	<noscript>
+		you need to activate js.
+	</noscript>
+</body>
+</html>
